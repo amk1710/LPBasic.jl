@@ -93,7 +93,7 @@ function PlotSolution(instance::ProblemInstance, solution::Array{Bool, 1}, osmpa
 
         #add route to plot
         if solution[line_i]
-            #addroute!(p,map_data,route,route_color="red",start_name="",end_name="")
+            addroute!(p,map_data,route,route_color="red",start_name="",end_name="")
         else
             addroute!(p,map_data,route,route_color="blue",start_name="",end_name="")
         end   
